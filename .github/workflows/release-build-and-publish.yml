@@ -32,7 +32,7 @@ jobs:
           poetry-version: ${{ env.TARGET_POETRY_VERSION }}
 
       - name: install dependencies
-        run: poetry install --with test --without dev
+        run: poetry install
 
       - name: run tests
         run: |
